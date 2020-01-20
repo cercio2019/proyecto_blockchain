@@ -1,0 +1,55 @@
+<div class="container m-5">
+    <div class="row">
+        <div class="col-md-5">
+            <h4>Pagos de servicios</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-9 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="pagos/confirmacion" method="POST" id="form-pagos">
+                        <div id="mensajes-pagos"> 
+
+                        </div> 
+                        <div class="form-group">
+                            <select name="empresa" class="form-control" id="empresa">
+                                <option value="">Seleccionar</option>
+                                <option value="Cantv">Cantv</option>
+                                <option value="HidroLara">HidroLara</option>
+                                <option value="Corpoelec">Corpoelec</option>
+                                <option value="Directv">Directv</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Introducir Cedula o Nro de cliente</label>
+                            <input type="text" name="documento" id="documento" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nombre del responsable</label>
+                            <input type="text" name="nombre" id="nombre_cliente"  class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nro de cuenta bancaria</label>
+                            <input type="text" name="cuenta" id="cuenta" class="form-control">
+                        </div>
+                         <div class="form-group">
+                            <label for="">Cantidad a pagar</label>
+                            <input type="number" name="cantidad" id="cantidad_pagar" class="form-control"> Bs.S
+                        </div>
+    
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Pagar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/formulario2.js"></script>
